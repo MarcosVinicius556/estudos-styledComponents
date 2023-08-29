@@ -1,12 +1,17 @@
-
+import { StyledButton } from "./components/Button.style"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-      <div>
-
-      </div>
+    /*
+     Utilizando styledComponents, 
+     ao invés de criar uma tag,
+     e estiliza-la, já criamos um componente,
+     e estilizamos no mesmo arquivo
+     */
+      <StyledButton onClick={() => console.log('clickou!')}>
+        Front Beginners
+      </StyledButton>
   )
 }
 
